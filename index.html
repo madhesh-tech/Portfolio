@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Madhesh — Full-Stack Developer &amp; Video Editor</title>
+  <meta name="description" content="Portfolio of Madhesh, CS student building high-performance web experiences and cutting sharp, story-driven video with CapCut, DaVinci Resolve and Premiere Pro." />
+  
+  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Pure HTML & CSS Theme Switcher Controller -->
+  <input type="checkbox" id="theme-toggle" class="theme-controller" aria-label="Toggle dark/light mode" />
+
+  <div class="site-wrapper">
+    <!-- Navigation Bar -->
+    <header class="navbar-wrapper">
+      <nav class="navbar" aria-label="Main Navigation">
+        <a href="#" class="brand-logo" aria-label="Madhesh Home">
+          Madhesh<span class="brand-dot">.</span>
+        </a>
+
+        <div class="nav-right">
+          <ul class="nav-links">
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#achievements" class="nav-link">Achievements</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+
+          <!-- Theme Toggle Button (Controls the checkbox via label) -->
+          <label for="theme-toggle" class="theme-toggle-btn" title="Toggle color mode" role="button" tabindex="0">
+            <!-- Sun Icon (shown in Dark Mode) -->
+            <svg class="theme-icon sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <!-- Moon Icon (shown in Light Mode) -->
+            <svg class="theme-icon moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </label>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HERO SECTION -->
+      <section class="hero-section" id="hero">
+        <div class="hero-container">
+          <!-- Left Column: Intro & CTA -->
+          <div class="hero-content">
+            <p class="hero-eyebrow">Full-Stack Developer &amp; Video Editor</p>
+            <h1 class="hero-title">Madhesh</h1>
+            <p class="hero-description">
+              CS student building high-performance web experiences — and cutting sharp, story-driven video with CapCut, DaVinci Resolve and Premiere Pro.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary">
+                View Projects <span class="arrow">↗</span>
+              </a>
+              <a href="#contact" class="btn btn-secondary">
+                Contact Me
+              </a>
+              <a href="#contact" class="btn btn-secondary btn-icon">
+                Resume 
+                <svg class="download-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+              </a>
+            </div>
+
+            <!-- Scroll indicator -->
+            <div class="scroll-indicator">
+              <svg class="scroll-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 5v14"></path>
+                <path d="m19 12-7 7-7-7"></path>
+              </svg>
+              <span>SCROLL</span>
+            </div>
+          </div>
+
+          <!-- Right Column: Madhesh's Portrait Card -->
+          <div class="hero-visual">
+            <div class="portrait-card">
+              <div class="portrait-image-wrapper">
+                <img src="assets/madhesh_portrait.png" alt="Madhesh - Full-Stack Developer & Video Editor" class="portrait-img" />
+                <div class="portrait-gradient-overlay"></div>
+              </div>
+              <div class="portrait-badge">
+                <span>DEVELOPER · VIDEO EDITOR</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FEATURED PROJECTS SECTION -->
+      <section class="section projects-section" id="projects">
+        <div class="section-container">
+          <div class="section-header">
+            <h2 class="section-title">Featured Projects</h2>
+          </div>
+
+          <div class="projects-grid">
+            <!-- Project 1 -->
+            <article class="project-card">
+              <div class="project-card-content">
+                <h3 class="project-title">Project One</h3>
+                <p class="project-description">
+                  Real-time collaboration workspace that removes the lag between idea and shipped spec. Presence, comments and version history in one canvas.
+                </p>
+
+                <div class="tech-tags">
+                  <span class="tech-tag">REACT</span>
+                  <span class="tech-tag">NODE.JS</span>
+                  <span class="tech-tag">TAILWIND</span>
+                  <span class="tech-tag">THREE.JS</span>
+                </div>
+              </div>
+
+              <div class="project-card-footer">
+                <a href="https://github.com/madhesh-tech" target="_blank" rel="noopener noreferrer" class="project-link live-link">
+                  Live Demo <span class="arrow">↗</span>
+                </a>
+                <a href="https://github.com/madhesh-tech" target="_blank" rel="noopener noreferrer" class="project-link code-link">
+                  <svg class="github-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                  Code
+                </a>
+              </div>
+            </article>
+
+            <!-- Project 2 -->
+            <article class="project-card">
+              <div class="project-card-content">
+                <h3 class="project-title">Project Two</h3>
+                <p class="project-description">
+                  Analytics dashboard turning raw event streams into decisions, with typed end-to-end data flow and sub-second queries.
+                </p>
+
+                <div class="tech-tags">
+                  <span class="tech-tag">NEXT.JS</span>
+                  <span class="tech-tag">TYPESCRIPT</span>
+                  <span class="tech-tag">POSTGRESQL</span>
+                </div>
+              </div>
+
+              <div class="project-card-footer">
+                <a href="https://github.com/madhesh-tech" target="_blank" rel="noopener noreferrer" class="project-link live-link">
+                  Live Demo <span class="arrow">↗</span>
+                </a>
+                <a href="https://github.com/madhesh-tech" target="_blank" rel="noopener noreferrer" class="project-link code-link">
+                  <svg class="github-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                  Code
+                </a>
+              </div>
+            </article>
+
+            <!-- Project 3 -->
+            <article class="project-card">
+              <div class="project-card-content">
+                <h3 class="project-title">Project Three</h3>
+                <p class="project-description">
+                  Document intelligence API that parses, embeds and answers questions over messy PDFs at scale.
+                </p>
+
+                <div class="tech-tags">
+                  <span class="tech-tag">PYTHON</span>
+                  <span class="tech-tag">FASTAPI</span>
+                  <span class="tech-tag">MONGODB</span>
+                </div>
+              </div>
+
+              <div class="project-card-footer">
+                <a href="https://github.com/madhesh-tech" target="_blank" rel="noopener noreferrer" class="project-link live-link">
+                  Live Demo <span class="arrow">↗</span>
+                </a>
+                <a href="https://github.com/madhesh-tech" target="_blank" rel="noopener noreferrer" class="project-link code-link">
+                  <svg class="github-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                  Code
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <div class="section-footer-action">
+            <a href="https://github.com/madhesh-tech" target="_blank" rel="noopener noreferrer" class="btn btn-pill">
+              View all projects <span class="arrow">↗</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ACHIEVEMENTS & COMPETITIONS SECTION -->
+      <section class="section achievements-section" id="achievements">
+        <div class="section-container">
+          <div class="section-header">
+            <h2 class="section-title">Achievements &amp; Competitions</h2>
+          </div>
+
+          <div class="achievements-grid">
+            <!-- Achievement 1 -->
+            <div class="achievement-card">
+              <h3 class="achievement-title">1st Place — Hack The Grid</h3>
+              <p class="achievement-category">HACKATHON · 2025</p>
+              <p class="achievement-description">
+                Built an offline-first energy tracker in 36 hours; judged best technical execution.
+              </p>
+            </div>
+
+            <!-- Achievement 2 -->
+            <div class="achievement-card">
+              <h3 class="achievement-title">LeetCode</h3>
+              <p class="achievement-category">CODING PLATFORM</p>
+              <p class="achievement-description">
+                Rating 1900+ · 600 problems solved.
+              </p>
+            </div>
+
+            <!-- Achievement 3 -->
+            <div class="achievement-card">
+              <h3 class="achievement-title">Merit Scholarship</h3>
+              <p class="achievement-category">ACADEMIC · 2024</p>
+              <p class="achievement-description">
+                Awarded for top 1% academic standing in the department.
+              </p>
+            </div>
+          </div>
+
+          <div class="achievements-footer">
+            <a href="#contact" class="btn btn-pill">
+              View all <span class="arrow">↗</span>
+            </a>
+            <div class="status-indicator-dot" title="Active">
+              <span class="dot-inner"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS & STACK SECTION -->
+      <section class="section skills-section" id="skills">
+        <div class="section-container">
+          <div class="section-header">
+            <h2 class="section-title">Skills &amp; Stack</h2>
+          </div>
+
+          <div class="skills-grid">
+            <!-- Languages -->
+            <div class="skills-card">
+              <h3 class="skills-category-title">LANGUAGES</h3>
+              <div class="skill-pills">
+                <span class="skill-pill">JavaScript</span>
+                <span class="skill-pill">TypeScript</span>
+                <span class="skill-pill">Python</span>
+                <span class="skill-pill">HTML/CSS</span>
+                <span class="skill-pill">C++</span>
+              </div>
+            </div>
+
+            <!-- Frontend -->
+            <div class="skills-card">
+              <h3 class="skills-category-title">FRONTEND</h3>
+              <div class="skill-pills">
+                <span class="skill-pill">React</span>
+                <span class="skill-pill">Next.js</span>
+                <span class="skill-pill">Tailwind CSS</span>
+                <span class="skill-pill">Three.js</span>
+                <span class="skill-pill">Framer Motion</span>
+              </div>
+            </div>
+
+            <!-- Backend & Databases -->
+            <div class="skills-card">
+              <h3 class="skills-category-title">BACKEND &amp; DATABASES</h3>
+              <div class="skill-pills">
+                <span class="skill-pill">Node.js</span>
+                <span class="skill-pill">Express</span>
+                <span class="skill-pill">PostgreSQL</span>
+                <span class="skill-pill">MongoDB</span>
+              </div>
+            </div>
+
+            <!-- Tools & Platforms -->
+            <div class="skills-card">
+              <h3 class="skills-category-title">TOOLS &amp; PLATFORMS</h3>
+              <div class="skill-pills">
+                <span class="skill-pill">Git</span>
+                <span class="skill-pill">GitHub</span>
+                <span class="skill-pill">Docker</span>
+                <span class="skill-pill">Vercel</span>
+                <span class="skill-pill">Figma</span>
+              </div>
+            </div>
+
+            <!-- Video Editing & Post -->
+            <div class="skills-card skills-card-wide">
+              <h3 class="skills-category-title">VIDEO EDITING &amp; POST</h3>
+              <div class="skill-pills">
+                <span class="skill-pill">CapCut</span>
+                <span class="skill-pill">DaVinci Resolve</span>
+                <span class="skill-pill">Adobe Premiere Pro</span>
+                <span class="skill-pill">Color Grading</span>
+                <span class="skill-pill">Motion Graphics</span>
+                <span class="skill-pill">Sound Design</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT SECTION -->
+      <section class="section contact-section" id="contact">
+        <div class="section-container">
+          <div class="contact-card">
+            <div class="contact-header">
+              <p class="hero-eyebrow">GET IN TOUCH</p>
+              <h2 class="contact-title">Let's build something remarkable.</h2>
+              <p class="contact-sub">
+                Whether you need a high-performance web product, a responsive full-stack platform, or high-impact video storytelling, my inbox is always open.
+              </p>
+            </div>
+
+            <div class="contact-links-grid">
+              <a href="mailto:madheshsec@gmail.com" class="contact-link-item">
+                <div class="contact-icon-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="contact-info">
+                  <span class="contact-label">Email Directly</span>
+                  <span class="contact-value">madheshsec@gmail.com</span>
+                </div>
+                <span class="contact-arrow">↗</span>
+              </a>
+
+              <a href="https://github.com/madhesh-tech" target="_blank" rel="noopener noreferrer" class="contact-link-item">
+                <div class="contact-icon-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                </div>
+                <div class="contact-info">
+                  <span class="contact-label">GitHub</span>
+                  <span class="contact-value">github.com/madhesh-tech</span>
+                </div>
+                <span class="contact-arrow">↗</span>
+              </a>
+
+              <a href="https://leetcode.com" target="_blank" rel="noopener noreferrer" class="contact-link-item">
+                <div class="contact-icon-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="16 18 22 12 16 6"></polyline>
+                    <polyline points="8 6 2 12 8 18"></polyline>
+                  </svg>
+                </div>
+                <div class="contact-info">
+                  <span class="contact-label">LeetCode</span>
+                  <span class="contact-value">1900+ Rating Profile</span>
+                </div>
+                <span class="contact-arrow">↗</span>
+              </a>
+
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="contact-link-item">
+                <div class="contact-icon-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                  </svg>
+                </div>
+                <div class="contact-info">
+                  <span class="contact-label">LinkedIn</span>
+                  <span class="contact-value">Connect Professionally</span>
+                </div>
+                <span class="contact-arrow">↗</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <p class="footer-copy">© 2025 Madhesh. All rights reserved.</p>
+        <p class="footer-stack">Crafted with pure HTML &amp; CSS</p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Optional tiny script for saving theme preference in localStorage & keyboard accessibility -->
+  <script>
+    (function() {
+      const toggle = document.getElementById('theme-toggle');
+      if (!toggle) return;
+      // Load saved preference
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme === 'light') {
+        toggle.checked = true;
+      } else if (savedTheme === 'dark') {
+        toggle.checked = false;
+      } else {
+        // Default to dark mode as in screenshots 1 & 2
+        toggle.checked = false;
+      }
+      toggle.addEventListener('change', function() {
+        localStorage.setItem('theme', toggle.checked ? 'light' : 'dark');
+      });
+    })();
+  </script>
+</body>
+</html>
